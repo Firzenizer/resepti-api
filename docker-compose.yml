@@ -1,0 +1,16 @@
+volumes:
+    mysqldata: {}
+services:
+    mariadbContainer:
+        image: mariadb:10.6
+        container_name: resepti-db-local
+        restart: always
+        ports:
+            - 3306:3306
+        environment:
+            MARIADB_DATABASE: reseptiLocal
+            MARIADB_USER: resepti
+            MARIADB_PASSWORD: kettu16
+            MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
+        volumes:
+            - mysqldata:/var/lib/mysql
