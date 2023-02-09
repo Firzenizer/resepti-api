@@ -11,6 +11,7 @@
 
 ## Nice to have tools
 - [DBeaver](https://dbeaver.io/download/) - Interacting with DB
+- [Postman](https://www.postman.com/downloads/) - For testing requests
 
 ## Installation
 - Run:
